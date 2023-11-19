@@ -1,0 +1,99 @@
+.portfolio{
+
+
+    &__title{
+        font-family: $font-ant;
+        font-size: 4rem;
+        font-weight: 400;
+        color: var(--text);
+        text-transform: uppercase;
+        margin-bottom: 2.25rem;
+
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            margin-top: 8.75rem;
+        }
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.88rem;
+        margin-bottom: 12.5rem;
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 8.75rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023.99999999999px){
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 8.75rem;
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 1.44rem;
+        padding: 1.88rem;
+        border-radius: 0.625rem;
+        border: 1px solid var(--main-colors-gray-15, #737373);
+        background: var(--background);
+
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            padding: 0.8rem;
+
+            &:nth-child(n+5){
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023.99999999999px){
+            padding: 0.8rem;
+
+            &:nth-child(n+5){
+                display: none;
+            }
+        }
+    }
+
+    &__text{
+        font-family: $font-got;
+        font-size: $font-xxm;
+        font-weight: 700;
+        color: var(--text);
+        cursor: pointer;
+    }
+
+    &__categ{
+        border: 1px solid $color-purple;
+        background: $color-button-purple;
+        width: 5.25rem;
+        height: 1.5rem;
+        border-radius: 0.75rem;
+        font-family: $font-got;
+        font-size: $font-sm;
+        font-weight: 400;
+        color: $color-purple;
+        cursor: pointer;
+    }
+
+    &__button{
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        background: $color-purplelight;
+        color: $color-white;
+        font-family: $font-got;
+        font-size: $font-md;
+        font-weight: 400;
+        height: 2.5rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__photo{
+        @media (min-width: 560px) and (max-width: 1023.99999999999px){
+            margin: 0 auto;
+        }
+    }
+}

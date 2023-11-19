@@ -1,0 +1,117 @@
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+
+    &__log{
+        display: flex;
+        align-items: center;
+    }
+
+    &__home{
+        padding-left: 5px;
+        font-family: $font-pop;
+        font-size: $font-xl;
+        font-weight: 700;
+        color: var(--text);
+    }
+
+    &__link{
+        font-family: $font-got;
+        font-size: $font-xl;
+        font-weight: 400;
+        color: var(--text);
+        padding-right: 1.9rem;
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            padding-right: 0;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__btn{
+        margin-left: calc(20vw + 20px);
+        border: none;
+        width: 8.3rem;
+        height: 2.5rem;
+        border-radius: 4px;
+        background: $color-purple;
+        font-family: $font-got;
+        font-size: $font-md;
+        font-weight: 400;
+        color: var(--text);
+        cursor: pointer;
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            margin-left: 0; 
+        }
+
+        @media (min-width:1024px) and (max-width:1539.9999px) {
+            margin-left: calc(15vw + 20px);;
+        }
+
+        @media (min-width:768px) and (max-width:1023.9999px) {
+            margin-left: calc(10vw + 20px);;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        @media (max-width: 767.99999999999px) {
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            width: auto;
+            height: 0;
+            overflow: hidden;
+            inset: 0;
+            z-index: 1;
+        }
+    }
+
+    &__check{
+        font-family: $font-got;
+        font-size: $font-xl;
+        font-style: normal;
+        font-weight: 400;
+        background-color: $color-white;
+        display: block;
+        opacity: 0;
+        width: 100% !important;
+        height: 0 !important;
+        position: absolute;
+        z-index: -1;
+        @media (min-width: 768px) {
+            display: none;
+        }
+        @media (max-width: 767.99999999999px) {
+            &:checked ~ .navbar__menu{
+                overflow: hidden;
+                top: 0;
+                height: 270px;
+                width: 100%;
+                background:$color-menu;
+                padding-top: 36px;
+                position: fixed;
+            }
+        }
+    }
+
+    &__soc{
+        cursor: pointer;
+    }
+}
+
+.burgerBTN{
+    position: relative;
+    z-index: 5;
+    display: block;
+    font-size: $font-md;
+    transition: all 0.2s ease-in-out;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

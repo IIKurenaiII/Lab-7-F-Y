@@ -1,0 +1,63 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: var(--background);
+    overflow-x: hidden;
+
+}
+
+
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: $color-black;
+}
+
+.conteiner{
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
+    @media (min-width:350px) and (max-width:559.9999px) {
+        max-width: 327px;
+    }
+
+    @media (min-width:560px) and (max-width:767.9999px) {
+        max-width: 420px;
+    }
+
+    @media (min-width:768px) and (max-width:1023.9999px) {
+        width: 740px;
+    }
+
+    @media (min-width:1024px) and (max-width:1539.9999px) {
+        width:54rem;
+    }
+
+    @media (min-width:1540px) and (max-width:1919.9999px) {
+        width: 1540px;
+    }
+}
+
+.mysvg{
+    fill: var(--svg-fill);
+    cursor: pointer;
+}
+
+.mysvg2{
+    stroke: var(--svg-fill);
+    cursor: pointer;
+}
+
+.mysvg3{
+    stroke: var(--svg-fill);
+}

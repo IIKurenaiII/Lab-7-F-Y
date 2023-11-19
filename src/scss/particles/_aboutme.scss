@@ -1,0 +1,171 @@
+.about{
+
+
+    &__conteiner{
+        display:grid;
+        grid-template-columns: repeat(2 , 1fr);
+        margin-bottom: 12.5rem;
+
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            grid-template-columns:1fr;
+            gap: 3.12rem;
+            margin-bottom: 8.75rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023.99999999999px){
+            grid-template-columns:1fr;
+            gap: 3.12rem;
+        }
+    }
+
+    &__cont{
+        display:flex;
+    }
+
+    &__block1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            align-items: center;
+            justify-content: start;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023.99999999999px){
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__block2{
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) and (max-width: 1023.99999999999px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+    &__title{
+        font-family: $font-got;
+        font-size: $font-xxxxl;
+        font-weight: 700;
+        color: var(--text);
+        margin-right: 2.37rem;
+        margin-bottom: 4.75rem;
+        text-transform: uppercase;
+
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            margin-right: 0;
+            margin-bottom:3.12rem;
+        }
+    }
+
+    &__zik{
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            display: none;
+            width: 0;
+            height: o;
+        }
+    }
+
+    &__text{
+        font-family: $font-got;
+        font-size: $font-xxxxl;
+        font-weight: bold;
+        color: var(--text);
+        max-width: 41rem;
+
+        @media (min-width: 350px) and (max-width: 559.99999999999px){
+            font-size: $font-xm;
+            max-width: 327px;
+        }
+
+        @media (min-width: 560px) and (max-width: 767.99999999999px){
+            font-size: $font-xm;
+            max-width: 420px;
+        }
+
+        @media (min-width: 768px) and (max-width:1023.9999px){
+            text-align: center;
+        }
+    }
+
+    &__gradient{
+        background: $color-gradient;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__gradient2{
+        background: $color-gradient-green;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__name{
+        background: $color-gradient-purple;
+        background-clip: text;
+        color:transparent;
+    }
+
+    &__contry{
+        background: $color-gradient-rainbow;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__photo1{
+        @media (min-width: 350px) and (max-width: 559.99999999999px){
+            object-fit: cover;
+            max-width: 327px;
+            height: 28rem;
+        }
+
+        @media (min-width: 560px) and (max-width: 767.99999999999px){
+            object-fit: cover;
+            max-width: 420px;
+            height: 28rem;
+        }
+    }
+
+    &__photo2{
+        @media (min-width: 350px) and (max-width: 559.99999999999px){
+            object-fit: cover;
+            max-width: 327px;
+            height: 29rem;
+            order: +2;
+        }
+
+        @media (min-width: 560px) and (max-width: 767.99999999999px){
+            object-fit: cover;
+            max-width: 420px;
+            height: 29rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023.99999999999px){
+            object-fit: cover;
+            width: 100%;
+            height: 29rem;
+        }
+    }
+
+
+    &__photo3{
+        @media (min-width: 350px) and (max-width: 767.99999999999px){
+            object-fit: cover;
+            max-width: 327px;
+            height: 29rem;
+        }
+
+        @media (min-width: 560px) and (max-width: 767.99999999999px){
+            object-fit: cover;
+            max-width: 420px;
+            height: 29rem;
+        }
+    }
+}
